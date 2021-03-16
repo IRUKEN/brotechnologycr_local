@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\EmpleadoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/empleado', function () {
     return view('empleado.index');
 });
 
+Route::get('/empleado/create',[EmpleadoController::class,'create']);
